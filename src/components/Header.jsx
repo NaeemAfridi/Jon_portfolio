@@ -36,28 +36,13 @@ const Header = () => {
               <Link to="#" className="facebook">
                 <BsFacebook />
               </Link>
-              <Link
-                to="https://www.instagram.com/naeem_afridi01/"
-                className="instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to="#" className="instagram">
                 <BsInstagram />
               </Link>
-              <Link
-                to="https://github.com/NaeemAfridi"
-                className="google-plus"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to="#" className="google-plus">
                 <BsGithub />
               </Link>
-              <Link
-                to="www.linkedin.com/in/naeem-afridi-298a27222"
-                className="linkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to="#" className="linkedin">
                 <BsLinkedin />
               </Link>
             </div>
