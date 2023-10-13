@@ -19,13 +19,28 @@ const Footer = () => {
             <Link to="#" className="facebook">
               <BsFacebook />
             </Link>
-            <Link to="#" className="instagram">
+            <Link
+              to="https://www.instagram.com/naeem_afridi01/"
+              className="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsInstagram />
             </Link>
-            <Link to="#" className="google-plus">
+            <Link
+              to="https://github.com/NaeemAfridi"
+              className="google-plus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsGithub />
             </Link>
-            <Link to="#" className="linkedin">
+            <Link
+              to="www.linkedin.com/in/naeem-afridi-298a27222"
+              className="linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsLinkedin />
             </Link>
           </div>
