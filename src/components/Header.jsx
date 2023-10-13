@@ -5,16 +5,17 @@ import {
   BsLinkedin,
   BsGithub,
 } from "react-icons/bs";
-import { FaBars } from "react-icons/fa6";
+// import { FaBars } from "react-icons/fa6";
 import { AiOutlineHome, AiOutlineUser, AiOutlineFile } from "react-icons/ai";
 import { BiBookContent, BiServer } from "react-icons/bi";
 import { SlEnvolope } from "react-icons/sl";
 import Jon from "../assets/img/jon-profile.png";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
       {/* <!-- ======= Mobile nav toggle button ======= --> */}
-      <FaBars className="mobile-nav-toggle d-xl-none" />
+      {/* <FaBars className="mobile-nav-toggle d-xl-none" /> */}
 
       {/* <!-- ======= Header ======= --> */}
       <header id="header">
@@ -26,57 +27,57 @@ const Header = () => {
               className="img-fluid rounded-circle"
             />
             <h1 className="text-light">
-              <a href="index.html">Naeem Jon</a>
+              <a href="#hero">Naeem Jon</a>
             </h1>
             <div className="social-links mt-3 text-center">
-              <a href="#" className="twitter">
+              <Link to="#" className="twitter">
                 <BsTwitter />
-              </a>
-              <a href="#" className="facebook">
+              </Link>
+              <Link to="#" className="facebook">
                 <BsFacebook />
-              </a>
-              <a href="#" className="instagram">
+              </Link>
+              <Link to="#" className="instagram">
                 <BsInstagram />
-              </a>
-              <a href="#" className="google-plus">
+              </Link>
+              <Link to="#" className="google-plus">
                 <BsGithub />
-              </a>
-              <a href="#" className="linkedin">
+              </Link>
+              <Link to="#" className="linkedin">
                 <BsLinkedin />
-              </a>
+              </Link>
             </div>
           </div>
 
           <nav id="navbar" className="nav-menu navbar">
             <ul>
               <li>
-                <a href="#hero" className="nav-link scrollto active">
-                  <AiOutlineHome /> <span>Home</span>
+                <a href="#hero" className="scrollto">
+                  <AiOutlineHome /> Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="nav-link scrollto">
+                <a href="#about" className="scrollto">
                   <AiOutlineUser /> <span>About</span>
                 </a>
               </li>
               <li>
-                <a href="#resume" className="nav-link scrollto">
+                <a href="#resume" className="scrollto">
                   <AiOutlineFile />
                   <span>Resume</span>
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="nav-link scrollto">
+                <a href="#portfolio" className="scrollto">
                   <BiBookContent /> <span>Portfolio</span>
                 </a>
               </li>
               <li>
-                <a href="#services" className="nav-link scrollto">
+                <a href="#services" className="scrollto">
                   <BiServer /> <span>Services</span>
                 </a>
               </li>
               <li>
-                <a href="#contact" className="nav-link scrollto">
+                <a href="#contact" className="scrollto">
                   <SlEnvolope /> <span>Contact</span>
                 </a>
               </li>
