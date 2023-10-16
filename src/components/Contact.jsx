@@ -1,6 +1,30 @@
 import { CiLocationOn } from "react-icons/ci";
 import { BsEnvelope, BsPhone } from "react-icons/bs";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_dxz53i5",
+        "template_r36457t",
+        form.current,
+        "xeAnYtWA5eBelZcLR"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <>
       <section id="contact" className="contact">
@@ -44,12 +68,7 @@ const Contact = () => {
             </div>
 
             <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                className="php-email-form"
-              >
+              <form ref={form} onSubmit={sendEmail} className="php-email-form">
                 <div className="row">
                   <div className="form-group col-md-6">
                     <label htmlFor="name">Your Name</label>
